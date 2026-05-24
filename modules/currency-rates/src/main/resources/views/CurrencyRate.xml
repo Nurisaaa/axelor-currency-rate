@@ -38,7 +38,7 @@
     <view type="form" name="currency-rate-form"/>
   </action-view>
 
-  <menuitem name="menu-currency-rate" title="Currency Rates" parent="referential-root"
-    action="action-currency-rate-grid" order="100"/>
+  <menuitem name="menu-currency-rate" title="Currency Rates"
+            action="action-currency-rate-grid" order="100"/>
 
 </object-views>
