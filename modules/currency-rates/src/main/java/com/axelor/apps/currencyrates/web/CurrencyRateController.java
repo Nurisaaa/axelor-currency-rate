@@ -18,7 +18,7 @@ public class CurrencyRateController {
     try {
       service.updateRates();
       response.setReload(true);
-      response.setInfo("Currency rates updated successfully");
+      response.setInfo("Rates updated successfully");
     } catch (Exception e) {
       response.setError("Update failed: " + e.getMessage());
     }

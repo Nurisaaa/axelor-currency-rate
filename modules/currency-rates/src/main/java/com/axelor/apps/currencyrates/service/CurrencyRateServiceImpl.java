@@ -24,8 +24,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
-public class CurrencyRateServiceImpl implements CurrencyRateService {
 
+public class CurrencyRateServiceImpl implements CurrencyRateService {
   private static final Logger log = LoggerFactory.getLogger(CurrencyRateServiceImpl.class);
   private static final String NBKR_URL = "https://www.nbkr.kg/XML/daily.xml";
   private final CurrencyRateRepository repository;
@@ -55,7 +55,7 @@ public class CurrencyRateServiceImpl implements CurrencyRateService {
       LocalDate date = LocalDate.parse(doc.getDocumentElement().getAttribute("Date"), DateTimeFormatter.ofPattern("dd.MM.yyyy"));
 
       NodeList list = doc.getElementsByTagName("Currency");
-      log.info("Parse: date={}, count={}", date, list.getLength());
+      log.info("date={}, count={}", date, list.getLength());
 
       for (int i = 0; i < list.getLength(); i++) {
         Element el = (Element) list.item(i);
