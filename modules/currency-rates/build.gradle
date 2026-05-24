@@ -1,0 +1,12 @@
+plugins {
+    id 'com.axelor.app'
+}
+
+axelor {
+    title = "Currency Rates"
+    description = "Daily exchange rates from NBKR"
+}
+
+dependencies {
+    implementation project(':modules:axelor-base')
+}
